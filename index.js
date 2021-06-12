@@ -68,6 +68,6 @@ app.get("/", (request, response) => {
   response.sendStatus(200);
 });
 // app.listen(process.env.PORT);
-// setInterval(() => {
-//   http.get(`https://spiced-jasper-tugboat.glitch.me/`);
-// }, 280000);
+setInterval(() => {
+  http.get(`https://whispering-burly-request.glitch.me/`);
+}, 280000);
