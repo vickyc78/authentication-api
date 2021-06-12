@@ -9,7 +9,7 @@ const nonSecurePaths = [
   "/User/forgetPassword"
 ];
 module.exports = async function checkUserValidity(req, res, next) {
-  console.log("DRFGHBJKL", req.path, req.headers);
+  // console.log("DRFGHBJKL", req.path, req.headers);
   if (nonSecurePaths.includes(req.path)) {
     next();
   } else {
@@ -18,7 +18,7 @@ module.exports = async function checkUserValidity(req, res, next) {
         accessToken: req.headers.accesstoken
       });
       if (findOneUser) {
-        console.log("inside if", findOneUser);
+        // console.log("inside if", findOneUser);
         req.user = findOneUser;
         next();
       } else {

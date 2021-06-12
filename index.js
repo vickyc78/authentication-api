@@ -9,7 +9,7 @@ let cors = require("cors");
 const cryptoSecret = require("crypto")
   .randomBytes(64)
   .toString("hex");
-console.log("cryptoSecret", cryptoSecret);
+// console.log("cryptoSecret", cryptoSecret);
 
 let Schema = mongoose.Schema;
 
